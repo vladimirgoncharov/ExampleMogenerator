@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E768468719DD2E100045C76B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E768468619DD2E100045C76B /* main.m */; };
+		E768468A19DD2E100045C76B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E768468919DD2E100045C76B /* AppDelegate.m */; };
+		E768468D19DD2E100045C76B /* ExampleMogenerator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E768468B19DD2E100045C76B /* ExampleMogenerator.xcdatamodeld */; };
+		E768469019DD2E100045C76B /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E768468F19DD2E100045C76B /* MasterViewController.m */; };
+		E768469319DD2E100045C76B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E768469219DD2E100045C76B /* DetailViewController.m */; };
+		E768469619DD2E100045C76B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E768469419DD2E100045C76B /* Main.storyboard */; };
+		E768469819DD2E100045C76B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E768469719DD2E100045C76B /* Images.xcassets */; };
+		E768469B19DD2E100045C76B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E768469919DD2E100045C76B /* LaunchScreen.xib */; };
+		E76846A719DD2E100045C76B /* ExampleMogeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E76846A619DD2E100045C76B /* ExampleMogeneratorTests.m */; };
+		E76846B519DD325E0045C76B /* mogend.sh in Resources */ = {isa = PBXBuildFile; fileRef = E76846B419DD325E0045C76B /* mogend.sh */; };
+		E76846BE19DD32860045C76B /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = E76846B919DD32860045C76B /* Event.m */; };
+		E76846BF19DD32860045C76B /* _Event.m in Sources */ = {isa = PBXBuildFile; fileRef = E76846BC19DD32860045C76B /* _Event.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		E76846B219DD31AE0045C76B /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = wrapper.xcdatamodel;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/${INPUT_FILE_BASE}.momd",
+			);
+			script = "# momc\necho \"Running mogend\"\n\"${PROJECT_DIR}/mogend.sh\"\necho \"Mogend.sh is completed\"";
+		};
+		E76846B319DD31E00045C76B /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = wrapper.xcdatamodeld;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/${INPUT_FILE_BASE}.momd",
+			);
+			script = "# momc\necho \"Running mogend\"\n\"${PROJECT_DIR}/mogend.sh\"\necho \"Mogend.sh is completed\"";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		E76846A119DD2E100045C76B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E768467919DD2E0F0045C76B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E768468019DD2E100045C76B;
+			remoteInfo = ExampleMogenerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E768468119DD2E100045C76B /* ExampleMogenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMogenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E768468519DD2E100045C76B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E768468619DD2E100045C76B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E768468819DD2E100045C76B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E768468919DD2E100045C76B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E768468C19DD2E100045C76B /* ExampleMogenerator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleMogenerator.xcdatamodel; sourceTree = "<group>"; };
+		E768468E19DD2E100045C76B /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		E768468F19DD2E100045C76B /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		E768469119DD2E100045C76B /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E768469219DD2E100045C76B /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E768469519DD2E100045C76B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E768469719DD2E100045C76B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E768469A19DD2E100045C76B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E76846A019DD2E100045C76B /* ExampleMogeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleMogeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76846A519DD2E100045C76B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E76846A619DD2E100045C76B /* ExampleMogeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleMogeneratorTests.m; sourceTree = "<group>"; };
+		E76846B419DD325E0045C76B /* mogend.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mogend.sh; sourceTree = SOURCE_ROOT; };
+		E76846B819DD32860045C76B /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		E76846B919DD32860045C76B /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		E76846BB19DD32860045C76B /* _Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Event.h; sourceTree = "<group>"; };
+		E76846BC19DD32860045C76B /* _Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Event.m; sourceTree = "<group>"; };
+		E76846BD19DD32860045C76B /* ModelIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelIncludes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E768467E19DD2E100045C76B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E768469D19DD2E100045C76B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E768467819DD2E0F0045C76B = {
+			isa = PBXGroup;
+			children = (
+				E768468319DD2E100045C76B /* ExampleMogenerator */,
+				E76846A319DD2E100045C76B /* ExampleMogeneratorTests */,
+				E768468219DD2E100045C76B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E768468219DD2E100045C76B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E768468119DD2E100045C76B /* ExampleMogenerator.app */,
+				E76846A019DD2E100045C76B /* ExampleMogeneratorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E768468319DD2E100045C76B /* ExampleMogenerator */ = {
+			isa = PBXGroup;
+			children = (
+				E768468819DD2E100045C76B /* AppDelegate.h */,
+				E768468919DD2E100045C76B /* AppDelegate.m */,
+				E768468E19DD2E100045C76B /* MasterViewController.h */,
+				E768468F19DD2E100045C76B /* MasterViewController.m */,
+				E768469119DD2E100045C76B /* DetailViewController.h */,
+				E768469219DD2E100045C76B /* DetailViewController.m */,
+				E768469419DD2E100045C76B /* Main.storyboard */,
+				E768469719DD2E100045C76B /* Images.xcassets */,
+				E768469919DD2E100045C76B /* LaunchScreen.xib */,
+				E768468B19DD2E100045C76B /* ExampleMogenerator.xcdatamodeld */,
+				E76846B619DD32860045C76B /* Models */,
+				E768468419DD2E100045C76B /* Supporting Files */,
+			);
+			path = ExampleMogenerator;
+			sourceTree = "<group>";
+		};
+		E768468419DD2E100045C76B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E76846B419DD325E0045C76B /* mogend.sh */,
+				E768468519DD2E100045C76B /* Info.plist */,
+				E768468619DD2E100045C76B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E76846A319DD2E100045C76B /* ExampleMogeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				E76846A619DD2E100045C76B /* ExampleMogeneratorTests.m */,
+				E76846A419DD2E100045C76B /* Supporting Files */,
+			);
+			path = ExampleMogeneratorTests;
+			sourceTree = "<group>";
+		};
+		E76846A419DD2E100045C76B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E76846A519DD2E100045C76B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E76846B619DD32860045C76B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E76846B719DD32860045C76B /* CoreData */,
+				E76846BD19DD32860045C76B /* ModelIncludes.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E76846B719DD32860045C76B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E76846B819DD32860045C76B /* Event.h */,
+				E76846B919DD32860045C76B /* Event.m */,
+				E76846BA19DD32860045C76B /* Private */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E76846BA19DD32860045C76B /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				E76846BB19DD32860045C76B /* _Event.h */,
+				E76846BC19DD32860045C76B /* _Event.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E768468019DD2E100045C76B /* ExampleMogenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E76846AA19DD2E100045C76B /* Build configuration list for PBXNativeTarget "ExampleMogenerator" */;
+			buildPhases = (
+				E768467D19DD2E100045C76B /* Sources */,
+				E768467E19DD2E100045C76B /* Frameworks */,
+				E768467F19DD2E100045C76B /* Resources */,
+			);
+			buildRules = (
+				E76846B319DD31E00045C76B /* PBXBuildRule */,
+				E76846B219DD31AE0045C76B /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = ExampleMogenerator;
+			productName = ExampleMogenerator;
+			productReference = E768468119DD2E100045C76B /* ExampleMogenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E768469F19DD2E100045C76B /* ExampleMogeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E76846AD19DD2E100045C76B /* Build configuration list for PBXNativeTarget "ExampleMogeneratorTests" */;
+			buildPhases = (
+				E768469C19DD2E100045C76B /* Sources */,
+				E768469D19DD2E100045C76B /* Frameworks */,
+				E768469E19DD2E100045C76B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E76846A219DD2E100045C76B /* PBXTargetDependency */,
+			);
+			name = ExampleMogeneratorTests;
+			productName = ExampleMogeneratorTests;
+			productReference = E76846A019DD2E100045C76B /* ExampleMogeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E768467919DD2E0F0045C76B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = FlatStack;
+				TargetAttributes = {
+					E768468019DD2E100045C76B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					E768469F19DD2E100045C76B = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = E768468019DD2E100045C76B;
+					};
+				};
+			};
+			buildConfigurationList = E768467C19DD2E0F0045C76B /* Build configuration list for PBXProject "ExampleMogenerator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E768467819DD2E0F0045C76B;
+			productRefGroup = E768468219DD2E100045C76B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E768468019DD2E100045C76B /* ExampleMogenerator */,
+				E768469F19DD2E100045C76B /* ExampleMogeneratorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E768467F19DD2E100045C76B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76846B519DD325E0045C76B /* mogend.sh in Resources */,
+				E768469619DD2E100045C76B /* Main.storyboard in Resources */,
+				E768469B19DD2E100045C76B /* LaunchScreen.xib in Resources */,
+				E768469819DD2E100045C76B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E768469E19DD2E100045C76B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E768467D19DD2E100045C76B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76846BE19DD32860045C76B /* Event.m in Sources */,
+				E768469319DD2E100045C76B /* DetailViewController.m in Sources */,
+				E768469019DD2E100045C76B /* MasterViewController.m in Sources */,
+				E768468D19DD2E100045C76B /* ExampleMogenerator.xcdatamodeld in Sources */,
+				E76846BF19DD32860045C76B /* _Event.m in Sources */,
+				E768468A19DD2E100045C76B /* AppDelegate.m in Sources */,
+				E768468719DD2E100045C76B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E768469C19DD2E100045C76B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76846A719DD2E100045C76B /* ExampleMogeneratorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E76846A219DD2E100045C76B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E768468019DD2E100045C76B /* ExampleMogenerator */;
+			targetProxy = E76846A119DD2E100045C76B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E768469419DD2E100045C76B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E768469519DD2E100045C76B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E768469919DD2E100045C76B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E768469A19DD2E100045C76B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E76846A819DD2E100045C76B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E76846A919DD2E100045C76B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E76846AB19DD2E100045C76B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExampleMogenerator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E76846AC19DD2E100045C76B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExampleMogenerator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E76846AE19DD2E100045C76B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ExampleMogeneratorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleMogenerator.app/ExampleMogenerator";
+			};
+			name = Debug;
+		};
+		E76846AF19DD2E100045C76B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ExampleMogeneratorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleMogenerator.app/ExampleMogenerator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E768467C19DD2E0F0045C76B /* Build configuration list for PBXProject "ExampleMogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76846A819DD2E100045C76B /* Debug */,
+				E76846A919DD2E100045C76B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E76846AA19DD2E100045C76B /* Build configuration list for PBXNativeTarget "ExampleMogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76846AB19DD2E100045C76B /* Debug */,
+				E76846AC19DD2E100045C76B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E76846AD19DD2E100045C76B /* Build configuration list for PBXNativeTarget "ExampleMogeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76846AE19DD2E100045C76B /* Debug */,
+				E76846AF19DD2E100045C76B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E768468B19DD2E100045C76B /* ExampleMogenerator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E768468C19DD2E100045C76B /* ExampleMogenerator.xcdatamodel */,
+			);
+			currentVersion = E768468C19DD2E100045C76B /* ExampleMogenerator.xcdatamodel */;
+			path = ExampleMogenerator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E768467919DD2E0F0045C76B /* Project object */;
+}
